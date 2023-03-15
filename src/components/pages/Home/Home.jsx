@@ -22,11 +22,7 @@ const Home = () => {
       .catch(err => console.log(err));
   }, []);
 
-  useEffect(() => {
-    // searchMovie(searchQuery)
-    //   .then(setFoundMovies)
-    //   .catch(err => console.log(err));
-  }, [searchQuery]);
+  useEffect(() => {}, [searchQuery]);
 
   const onFormSabmit = e => {
     e.preventDefault();
