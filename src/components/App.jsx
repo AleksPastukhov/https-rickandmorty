@@ -1,17 +1,10 @@
 import { lazy, Suspense } from 'react';
 import { Routes, Route } from 'react-router-dom';
 import GloblStyle from './GlobalStyle';
-import {
-  getAllCharacters,
-  getCharacterById,
-} from '../services/theRickandmortyApi';
 
 const Home = lazy(() => import('./pages/Home/Home'));
 const Character = lazy(() => import('./pages/Character/Character'));
 const NotFound = lazy(() => import('./pages/NotFound/NotFound'));
-
-getAllCharacters().then(console.log).catch(console.log);
-getCharacterById().then(console.log).catch(console.log);
 
 export const App = () => {
   return (
