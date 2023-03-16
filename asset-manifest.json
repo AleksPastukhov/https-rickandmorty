@@ -1,22 +1,24 @@
 {
   "files": {
     "main.css": "/rickandmorty/static/css/main.c3d5249d.css",
-    "main.js": "/rickandmorty/static/js/main.baa21003.js",
-    "static/js/654.5f217a40.chunk.js": "/rickandmorty/static/js/654.5f217a40.chunk.js",
-    "static/js/412.00e7e80c.chunk.js": "/rickandmorty/static/js/412.00e7e80c.chunk.js",
+    "main.js": "/rickandmorty/static/js/main.5e8d1dff.js",
+    "static/js/654.0e52532f.chunk.js": "/rickandmorty/static/js/654.0e52532f.chunk.js",
+    "static/js/412.67d03969.chunk.js": "/rickandmorty/static/js/412.67d03969.chunk.js",
     "static/js/774.d9d84349.chunk.js": "/rickandmorty/static/js/774.d9d84349.chunk.js",
-    "static/js/459.2be85609.chunk.js": "/rickandmorty/static/js/459.2be85609.chunk.js",
+    "static/js/506.b9fb5468.chunk.js": "/rickandmorty/static/js/506.b9fb5468.chunk.js",
+    "static/js/134.1f82dfac.chunk.js": "/rickandmorty/static/js/134.1f82dfac.chunk.js",
     "static/media/logo.jpeg": "/rickandmorty/static/media/logo.16f7e73e8b8ed34ccca9.jpeg",
     "index.html": "/rickandmorty/index.html",
     "main.c3d5249d.css.map": "/rickandmorty/static/css/main.c3d5249d.css.map",
-    "main.baa21003.js.map": "/rickandmorty/static/js/main.baa21003.js.map",
-    "654.5f217a40.chunk.js.map": "/rickandmorty/static/js/654.5f217a40.chunk.js.map",
-    "412.00e7e80c.chunk.js.map": "/rickandmorty/static/js/412.00e7e80c.chunk.js.map",
+    "main.5e8d1dff.js.map": "/rickandmorty/static/js/main.5e8d1dff.js.map",
+    "654.0e52532f.chunk.js.map": "/rickandmorty/static/js/654.0e52532f.chunk.js.map",
+    "412.67d03969.chunk.js.map": "/rickandmorty/static/js/412.67d03969.chunk.js.map",
     "774.d9d84349.chunk.js.map": "/rickandmorty/static/js/774.d9d84349.chunk.js.map",
-    "459.2be85609.chunk.js.map": "/rickandmorty/static/js/459.2be85609.chunk.js.map"
+    "506.b9fb5468.chunk.js.map": "/rickandmorty/static/js/506.b9fb5468.chunk.js.map",
+    "134.1f82dfac.chunk.js.map": "/rickandmorty/static/js/134.1f82dfac.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.c3d5249d.css",
-    "static/js/main.baa21003.js"
+    "static/js/main.5e8d1dff.js"
   ]
 }
