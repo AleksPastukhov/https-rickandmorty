@@ -33,7 +33,8 @@ const Home = () => {
     if (searchQuery === '') {
       return;
     }
-    getCharacterByName(searchQuery)
+    const abortController = new AbortController();
+    getCharacterByName(searchQuery, abortController)
       .then(resp => {
         const sortAdd = resp.results.sort((firstCharacter, secondCharacter) =>
           firstCharacter.name.localeCompare(secondCharacter.name)
@@ -41,6 +42,9 @@ const Home = () => {
         setAllCharacters(sortAdd);
       })
       .catch(err => console.log(err));
+    return () => {
+      abortController.abort();
+    };
   }, [searchQuery]);
 
   const onInputChange = name => {

@@ -12,11 +12,12 @@ export async function getCharacterById(characterId = 1) {
   return respons.data;
 }
 
-export async function getCharacterByName(name) {
+export async function getCharacterByName(name, abortController) {
   const options = {
     params: {
       name,
     },
+    signal: abortController.signal,
   };
 
   const respons = await axios.get(`${BASE_URL}`, options);
