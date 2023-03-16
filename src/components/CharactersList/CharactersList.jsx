@@ -5,6 +5,7 @@ import {
   Link,
   CharacterSpecies,
   CharacterName,
+  InfoBox,
   Card,
 } from './CharactersList.styled';
 import img from '../../images/no-foto.png';
@@ -22,15 +23,15 @@ export const CharactersList = ({ characters }) => {
         {characters.map(({ id, image, name, species }) => (
           <Card key={id}>
             <Link to={`/character/${id}`} state={{ from: location }}>
-              <div>
-                <img
-                  src={image ? image : img}
-                  alt={`Poster ${name}`}
-                  width="240px"
-                />
+              <img
+                src={image ? image : img}
+                alt={`Poster ${name}`}
+                width="240px"
+              />
+              <InfoBox>
                 <CharacterName>{name}</CharacterName>
                 <CharacterSpecies>{species}</CharacterSpecies>
-              </div>
+              </InfoBox>
             </Link>
           </Card>
         ))}

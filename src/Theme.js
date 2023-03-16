@@ -1,7 +1,9 @@
 export const theme = {
   colors: {
-    primaryTextColor: '#1f2833',
-    accentСolor: '#0260d6',
+    primaryTextColor: '#000000',
+    nameTextColor: '#081F32',
+    subtitleTextColor: '#8e8e93',
+    accentСolor: '#6e798c',
     backgroundColor: '#fafafa',
   },
   boxShadow:

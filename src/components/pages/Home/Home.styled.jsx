@@ -2,16 +2,26 @@ import styled from '@emotion/styled';
 
 export const Container = styled.div`
   margin: 0 auto;
-  padding: 86px 0;
-  width: 1020px;
+  padding: 86px 10px;
+  width: 100%;
+
+  @media screen and (min-width: 1200px) {
+    width: 1040px;
+  }
 `;
 
 export const Logo = styled.img`
   display: block;
   margin: 0 auto;
-  width: 600px;
-  height: 200px;
   margin-bottom: 16px;
+  width: 100%;
+  max-width: 600px;
+  max-height: 200px;
+
+  @media screen and (min-width: 1200px) {
+    width: 600px;
+    height: 200px;
+  }
 `;
 
 export const SectionTitle = styled.h1`

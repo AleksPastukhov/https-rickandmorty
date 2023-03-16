@@ -1,5 +1,6 @@
-import { useSearchParams } from 'react-router-dom';
+import { NavLink, useSearchParams } from 'react-router-dom';
 import { useEffect, useState, Suspense } from 'react';
+import { toast } from 'react-toastify';
 import {
   getAllCharacters,
   getCharacterByName,
@@ -33,7 +34,9 @@ const Home = () => {
     if (searchQuery === '') {
       return;
     }
+
     const abortController = new AbortController();
+
     getCharacterByName(searchQuery, abortController)
       .then(resp => {
         const sortAdd = resp.results.sort((firstCharacter, secondCharacter) =>
@@ -41,7 +44,12 @@ const Home = () => {
         );
         setAllCharacters(sortAdd);
       })
-      .catch(err => console.log(err));
+      .catch(() => {
+        toast.error(
+          `UpsOops!!! We did not find any characters for your request. Please try changing the character name.`
+        );
+        setAllCharacters([]);
+      });
     return () => {
       abortController.abort();
     };
@@ -55,7 +63,9 @@ const Home = () => {
   return (
     <Container>
       <SectionTitle>Characters</SectionTitle>
-      <Logo src={logo} alt="Logo Rick and morty" width="600px" />
+      <NavLink to="/">
+        <Logo src={logo} alt="Logo Rick and morty" width="600px" />
+      </NavLink>
       <Suspense fallback={<h2>Loading...</h2>}>
         <SearchBar onInputChange={onInputChange} value={searchQuery} />
         <CharactersList characters={allCharacters} />
